@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600&display=swap');
+
+:root{
+    --primary-color: rgba(70,130,180,1);
+    --primary-color-01:rgba(70,130,180,0.1);
+    --primary-color-02:rgba(70,130,180,0.2);
+    --primary-color-03:rgba(70,130,180,0.3);
+    --primary-color-04:rgba(70,130,180,0.4);
+    --primary-color-05:rgba(70,130,180,0.5);
+    --primary-color-06:rgba(70,130,180,0.6);
+    --primary-color-07:rgba(70,130,180,0.7);
+    --primary-color-08:rgba(70,130,180,0.8);
+    --primary-color-09:rgba(70,130,180,0.9);
+
+    --secondary-color: #fff;
+    --ash-color:#EBEBEB;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alegreya', serif;
+}
+
+li,ol{
+    list-style-type: none;
+}
+
+
+.navigation{
+    background:#fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid var(--primary-color);
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:1;
+}
+
+.navigation-item{
+    position:relative;
+}
+
+.navigation-item.active:after{
+    content:'';
+    position:absolute;
+    bottom: -12px;
+    left: 56px;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background:var(--primary-color);
+}
+.navigation-item.active:before{
+    content:'';
+    position:absolute;
+    bottom: -15px;
+    left: 53px;
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+    background:var(--primary-color);
+    opacity: 0.2;
+}
+
+.navigation-item:after{
+    content:'';
+    position:absolute;
+    bottom: -15px;
+    left: 57px;
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    background:var(--ash-color);
+}
+
+.navigation-link{
+    font-size:0.8rem;
+    color:#000;
+}
+
+.phone-number{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.custom-card{
+    background:var(--primary-color-01);
+    border-radius: 0.8rem;
+}
+
+.card-image{
+    border-radius:0.8rem;
+}
+
+
+
+.primary-color{
+    color:var(--primary-color);
+}
+
+.mt-6{
+    margin-top:6rem;
+}
